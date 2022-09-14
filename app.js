@@ -55,15 +55,17 @@ function displayPhrases() {
 }
 
 addButton.addEventListener('click', () => {
+    if (phraseInput.value !== ''){
     // > Get the phrase from the value of the phrase input
-    const phrase = phraseInput.value;
+        const phrase = phraseInput.value;
     // > Use ".push" to add the phrase to the end of the character phrases array
-    character.phrases.push(phrase);
+        character.phrases.push(phrase);
     // > Re-display the phrases
-    displayPhrases();
+        displayPhrases();
 
     // reset the input
-    phraseInput.value = '';
+        phraseInput.value = '';
+    }
 });
 
 displayCharacter();
