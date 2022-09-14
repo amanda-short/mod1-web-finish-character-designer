@@ -37,7 +37,7 @@ pantsSelect.addEventListener('change', () => {
 function displayCharacter() {
     headImage.src = 'assets/character/' + character.head + '-head.png';
     middleImage.src = 'assets/character/' + character.middle + '-middle.png';
-    pantsImage.src = 'assets/character/' + character.pants + '-pants.png'
+    pantsImage.src = 'assets/character/' + character.pants + '-pants.png';
 }
 
 function displayPhrases() {
